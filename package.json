@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/goatcheese82/contactsw01/issues"
   },
-  "homepage": "https://github.com/goatcheese82/contactsw01#readme"
+  "homepage": "https://github.com/goatcheese82/contactsw01#readme",
+  "dependencies": {
+    "express": "^4.18.3"
+  }
 }
