@@ -1,0 +1,25 @@
+[{
+   "id": 1,
+   "firstName": "Ben",
+   "lastName": "Smith",
+   "email": "smi02045@byui.edu",
+   "favoriteColor": "red",
+   "birthday": { "$date": "1984-03-07"}
+},
+{
+   "id": 2,
+   "firstName": "Odin",
+   "lastName": "Smith",
+   "email": "smi02045@byui.edu",
+   "favoriteColor": "red",
+   "birthday": { "$date": "2019-05-06"}
+},
+{
+   "id": 3,
+   "firstName": "Ragnar",
+   "lastName": "Smith",
+   "email": "smi02045@byui.edu",
+   "favoriteColor": "red",
+   "birthday": { "$date": "2022-03-29"}
+}
+]
