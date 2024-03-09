@@ -58,7 +58,7 @@ const deleteUser = async (req, res, next) => {
    let collection = db.collection("users");
    try {
    const result = await collection.findOneAndDelete(filter);
-   res.status(200).send(result);
+   res.status(200).send('Your user was deleted.');
    } catch (err) {
       console.error('Error:', err);
       res.status(500).send('Something went wrong');
