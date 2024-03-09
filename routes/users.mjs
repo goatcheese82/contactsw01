@@ -8,15 +8,15 @@ const router = express.Router();
 
 /* Get Routes */
 
-router.get('/', usersController.getAllUsers);
-router.get('/:id', usersController.getUserById);
+router.get('/', /*#swagger.tags=["Users"]*/ usersController.getAllUsers);
+router.get('/:id', /*#swagger.tags=["Users"]*/ usersController.getUserById);
 
 /* Post Routes */
 
-router.post('/', usersController.createUser);
+router.post('/', /*#swagger.tags=["Users"] #swagger.start='users'*/ usersController.createUser);
 
-router.patch('/:id', usersController.updateUser);
+router.patch('/:id', /*#swagger.tags=["Users"] */ usersController.updateUser);
 
-router.delete('/:id', usersController.deleteUser);
+router.delete('/:id', /*#swagger.tags=["Users"]*/ usersController.deleteUser);
 
 export default router;

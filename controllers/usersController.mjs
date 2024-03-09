@@ -18,6 +18,7 @@ const getUserById = async (req, res) => {
 }
 
 const createUser = async (req, res, next) => {
+   //#swagger.tags=['Users']
    const user = {
       id: req.body.id,
       firstName: req.body.firstName,

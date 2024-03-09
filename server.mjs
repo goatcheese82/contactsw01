@@ -10,9 +10,9 @@ import bodyParser from "body-parser";
 const PORT = process.env.PORT || 3000;
 const app = express();
 
-app.use(cors());
 app.use(express.json());
 app.use(bodyParser.json());
+app.use(cors());
 
 app.use("/users", users);
 app.use("/", home);
