@@ -5,7 +5,7 @@ const doc = {
       title: "Users API",
       description: "Users API"
    },
-   host: "https://contacts-8pm1.onrender.com",
+   host: process.env.BASE_URL,
    schemes: ["https", "http"]
 };
 
@@ -13,4 +13,6 @@ const outputFile = './swagger.json';
 const endpointsFiles = ['./server.mjs'];
 
 
-swaggerAutogen()(outputFile, endpointsFiles, doc);
+swaggerAutogen()(outputFile, endpointsFiles, doc).then(async () => {
+   await import('./server.mjs');
+});
