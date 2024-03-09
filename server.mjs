@@ -4,6 +4,7 @@ import "./loadEnvironment.mjs";
 import "express-async-errors";
 import users from "./routes/users.mjs";
 import home from "./routes/index.mjs";
+import bodyParser from "body-parser";
 
 
 const PORT = process.env.PORT || 3000;
@@ -11,6 +12,7 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
+app.use(bodyParser.json());
 
 app.use("/users", users);
 app.use("/", home);
